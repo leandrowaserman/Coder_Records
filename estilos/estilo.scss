@@ -1,0 +1,19 @@
+@import "colores";
+@import "footer";
+@import "index";
+@import  "merch";
+@import "artistas";
+@import "sobre";
+@import "tickets";
+@import "contacto";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #1a1c1f;
+}

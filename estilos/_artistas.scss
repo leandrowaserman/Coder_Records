@@ -1,0 +1,47 @@
+.artistasCarousel{
+    width: 75vw;
+    margin-bottom: 8vh;
+    img{
+        width: 75vw;
+    }
+}
+.videosArtistas{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    h2{
+        color: $naranja;
+    }
+    div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+        margin: 15px;
+    }
+}
+#galeria{
+    width: 100%;
+    height: max-content;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    text-align: center;
+    h2{
+        color: $naranja;
+    }
+    img{
+        width: 400px;
+        margin: 15px;
+        transition: 0.7s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+        margin: 15px;
+    }
+}

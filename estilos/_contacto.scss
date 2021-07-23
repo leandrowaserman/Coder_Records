@@ -1,0 +1,20 @@
+.pre-contacto{
+    text-align: center;
+    margin-top: 5vh;
+    h2{
+        color: $naranja;
+    }
+}
+.contacto{
+    margin-top: 3vh;
+    button{
+        background-color: $naranja;
+        color: black;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover{
+            background-color: black;
+            color: $naranja;
+        }
+    }
+}
