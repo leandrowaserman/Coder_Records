@@ -1,19 +1,19 @@
 footer{
     background-color: $footercolor;
-    height: 40vh;
+    height: 25vh;
     border-top: 5px double  white;
-    margin-top: 10vh;
+    margin-top: 2vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr, 1fr, 0.4fr;
-    grid-template-areas: "imagen imagen" "footnav redes" "copyright copyright";
+    grid-template-areas: "imagen" "redes" "copyright";
     justify-items: center;
     align-content: center;
     .footer__img{
         grid-area: imagen;
         align-self:center;
         img{
-           width: 30vw;
+           width: 50vw;
            transition: 0.7s;
            &:hover{
             -webkit-filter: invert(100%);
@@ -23,9 +23,9 @@ footer{
         }    
     }
     .footer__nav{
-        grid-area: footnav;
         justify-self: center;
         align-self: center;
+        display: none;
         h3{
             text-decoration: underline;
             color: $naranja;
@@ -48,9 +48,8 @@ footer{
         align-self: center;
         justify-self: center;
         img{
-            margin: 20px;
-            padding:8px;
-            width: 4vw;
+            width: 8vw;
+            margin:2vw;
             transition: 0.5s;
             border-radius: 10px;
             &:hover{
@@ -62,5 +61,73 @@ footer{
         grid-area: copyright;
         justify-self: center;
         align-self: center;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+   footer{
+        height: 40vh;
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr, 1fr, 0.4fr;
+        grid-template-areas: "imagen imagen" "footnav redes" "copyright copyright";
+        justify-items: center;
+        align-content: center;
+        .footer__img{
+            grid-area: imagen;
+            img{
+                width: 30vw;
+            }
+        }
+        .footer__nav{
+            display: block;
+            grid-area: footnav;
+        }
+        .redes{
+            grid-area: redes;
+            img{
+                margin: 20px;
+                padding:8px;
+                width: 4vw;
+            }
+        }
+        .copyright{
+            grid-area: copyright;
+
+        }
+    } 
+}
+@media only screen and (min-width:1024px){
+    footer{
+        height: 40vh;
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr, 1fr, 0.4fr;
+        grid-template-areas: "imagen imagen" "footnav redes" "copyright copyright";
+        justify-items: center;
+        align-content: center;
+        .footer__img{
+            grid-area: imagen;
+            img{
+                width: 30vw;
+            }
+        }
+        .footer__nav{
+            display: block;
+            grid-area: footnav;
+        }
+        .redes{
+            grid-area: redes;
+            img{
+                margin: 20px;
+                padding:8px;
+                width: 4vw;
+            }
+        }
+        .copyright{
+            grid-area: copyright;
+
+        }
     }
 }

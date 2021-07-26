@@ -11,9 +11,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     background-color: #1a1c1f;
+}
+h2{
+    font-family: 'Maven Pro', sans-serif;
+    color: $naranja;
+    font-size: 2em;
+    font-weight: bold;
+}
+.h2-Portada{
+    color: #fff;
+    font-size: 2em;
+}
+h3{
+    font-family: 'Maven Pro', sans-serif;
+    color: $naranja;
+    font-size: 1.5em;
+}
+p{
+    font-family: 'Sarala', sans-serif;
+}
+#navegador{
+    font-family: 'Staatliches', cursive;
+}
+h5{
+    font-size: 1.7em;
 }

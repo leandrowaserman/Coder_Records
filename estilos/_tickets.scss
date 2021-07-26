@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
 
-body{
-  background-color: #dadde6;
-  font-family: arial;
-}
 
 .fl-left{
     float: left;
@@ -17,6 +12,7 @@ body{
   margin-top: 8vh;
   width: 90%;
   margin: 100px auto;
+  font-size: 0.9em;
   .row{
     overflow: hidden;
     padding-bottom: 10px;
@@ -24,9 +20,9 @@ body{
   .h2__tickets{
     text-transform: uppercase;
     font-weight: 900;
-    border-left: 10px solid $naranja;
     padding-left: 10px;
     margin-bottom: 30px;
+    text-align: center;
   }
   .card{
     display: table-row;
@@ -147,23 +143,46 @@ body{
     }
   }
 }
-
-
-
-
-
-.card + .card{margin-left: 2%}
-
-
-
-
-
-
-
-
-
-
-
+.main__tickets{
+  display: none;
+  .container{
+    .h2__tickets{
+      div{
+        display: flex;
+        flex-flow: column wrap;
+        article{
+          width: 100%;     
+        }
+      }
+    }  
+  }
+}
+.card + .card{
+  margin-left: 2%
+}
+.tickets__Responsive{
+  background-color: #474747;
+  width: 100%;
+  height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  padding: 20px;
+  text-align: center;
+  word-spacing: 5px;
+  span{
+    border-left: 2px #888787 solid ;
+    padding-left: 10px;
+  }
+  .span__right{
+    color: $naranja;
+    font-weight: bold;
+    transition: 0.7s;
+    &:hover{
+      color: white;
+    }
+  }
+}
 @media only screen and (max-width: 860px){
   .card{
     display: block;
@@ -171,11 +190,50 @@ body{
     width: 100%;
     margin-bottom: 10px;
   }
-  
   .card + .card{margin-left: 0}
-  
   .card-cont .even-date,
   .card-cont .even-info{
     font-size: 75%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width:768px){
+  .tickets__Responsive{
+    background-color: #474747;
+    width: 100%;
+    height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    padding: 20px;
+    text-align: start;
+    p{
+      border-bottom: 2px #686666 solid;
+      border-top: 2px #686666 solid;
+      position: relative;
+      padding: 0.7rem;
+      .span__center{
+        position: absolute;
+        left: 45%;
+      }
+      .span__right{
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        color: $naranja;
+        font-weight: bold;
+        transition: 0.7s;
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width:768px) {
+  .tickets__Responsive{
+    display: none;
+  }
+  .main__tickets{
+    display: block;
   }
 }

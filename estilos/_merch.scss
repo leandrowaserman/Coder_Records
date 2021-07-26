@@ -28,6 +28,7 @@
     .pre-tienda{
         text-align: center;
         margin-top: 5vh;
+        font-size: 1.2em;
     }
     .ventaRopa{
         display: flex;
@@ -37,7 +38,7 @@
             text-align: center;
             margin: 30px;
             img{
-                width: 20vw;
+                width: 250px;
                 margin-bottom: 30px;
                 transition: 0.6s;
                 &:hover{
@@ -54,7 +55,7 @@
             text-align: center;
             margin: 30px;
             img{
-                width: 20vw;
+                width: 250px;
                 margin-bottom: 30px;
                 transition: 0.6s;
                 &:hover{
@@ -135,4 +136,30 @@ button.snip0047.hover:before {
 }
 button.snip0047.red {
     background-color: $naranja;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+}
+@media only screen and (min-width:1024px){
+    .pre-tienda{
+        font-size: 1.3em;
+    }
+    .mainMerch{
+        .ventaRopa{
+            div{
+                img{
+                    width: 20vw;
+                }
+            }
+        }
+        .ventaDiscos{
+            div{
+                img{
+                    width: 20vw;
+                }
+            }
+        }
+    }
 }

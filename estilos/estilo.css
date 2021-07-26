@@ -1,14 +1,13 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url("https://fonts.googleapis.com/css?family=Oswald");
 footer {
   background-color: #0b0c0e;
-  height: 40vh;
+  height: 25vh;
   border-top: 5px double white;
-  margin-top: 10vh;
+  margin-top: 2vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr, 1fr, 0.4fr;
-  grid-template-areas: "imagen imagen" "footnav redes" "copyright copyright";
+  grid-template-areas: "imagen" "redes" "copyright";
   justify-items: center;
   align-content: center;
 }
@@ -17,7 +16,7 @@ footer .footer__img {
   align-self: center;
 }
 footer .footer__img img {
-  width: 30vw;
+  width: 50vw;
   transition: 0.7s;
 }
 footer .footer__img img:hover {
@@ -25,9 +24,9 @@ footer .footer__img img:hover {
   filter: invert(100%);
 }
 footer .footer__nav {
-  grid-area: footnav;
   justify-self: center;
   align-self: center;
+  display: none;
 }
 footer .footer__nav h3 {
   text-decoration: underline;
@@ -51,9 +50,8 @@ footer .redes {
   justify-self: center;
 }
 footer .redes img {
-  margin: 20px;
-  padding: 8px;
-  width: 4vw;
+  width: 8vw;
+  margin: 2vw;
   transition: 0.5s;
   border-radius: 10px;
 }
@@ -66,6 +64,72 @@ footer .copyright {
   align-self: center;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    height: 40vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 1fr, 0.4fr;
+    grid-template-areas: "imagen imagen" "footnav redes" "copyright copyright";
+    justify-items: center;
+    align-content: center;
+  }
+  footer .footer__img {
+    grid-area: imagen;
+  }
+  footer .footer__img img {
+    width: 30vw;
+  }
+  footer .footer__nav {
+    display: block;
+    grid-area: footnav;
+  }
+  footer .redes {
+    grid-area: redes;
+  }
+  footer .redes img {
+    margin: 20px;
+    padding: 8px;
+    width: 4vw;
+  }
+  footer .copyright {
+    grid-area: copyright;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer {
+    height: 40vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 1fr, 0.4fr;
+    grid-template-areas: "imagen imagen" "footnav redes" "copyright copyright";
+    justify-items: center;
+    align-content: center;
+  }
+  footer .footer__img {
+    grid-area: imagen;
+  }
+  footer .footer__img img {
+    width: 30vw;
+  }
+  footer .footer__nav {
+    display: block;
+    grid-area: footnav;
+  }
+  footer .redes {
+    grid-area: redes;
+  }
+  footer .redes img {
+    margin: 20px;
+    padding: 8px;
+    width: 4vw;
+  }
+  footer .copyright {
+    grid-area: copyright;
+  }
+}
 .portada {
   width: 100%;
   height: 100vh;
@@ -88,6 +152,7 @@ footer .copyright {
 }
 .portada h2 {
   width: 100%;
+  color: white;
 }
 
 #navegador {
@@ -107,7 +172,7 @@ footer .copyright {
   text-decoration: none;
   font-weight: 400;
   font-size: 0.9375rem;
-  padding: 0.625rem;
+  padding: 0;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -137,7 +202,7 @@ footer .copyright {
 }
 #navegador ul ul a {
   line-height: 120%;
-  padding: 10px 15px;
+  padding: 10px;
 }
 #navegador li {
   display: inline-block;
@@ -156,7 +221,7 @@ footer .copyright {
 }
 
 header {
-  position: sticky;
+  position: relative;
   width: 100%;
   background: #000;
   border-bottom: 3px #fff solid;
@@ -165,7 +230,7 @@ header {
 }
 header nav {
   grid-area: drop;
-  word-spacing: 15px;
+  word-spacing: 8px;
 }
 header nav .dropdown {
   text-align: right;
@@ -175,6 +240,8 @@ header nav .dropdown button {
 }
 
 .mainIndex {
+  display: flex;
+  flex-flow: column nowrap;
   width: 100%;
 }
 .mainIndex img {
@@ -183,30 +250,29 @@ header nav .dropdown button {
 .mainIndex img:hover {
   transform: scale(1.1);
 }
+.mainIndex h3 {
+  font-family: "Maven Pro", sans-serif;
+  color: #c87f0a;
+}
 .mainIndex .sobre__Index {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin-top: 8vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .mainIndex .sobre__Index .sobre__Index-imagen {
-  height: 60vh;
-  width: 30vw;
   margin-right: 50px;
 }
 .mainIndex .sobre__Index .sobre__Index-imagen img {
-  width: 30vw;
-  height: 60vh;
+  width: 100vw;
 }
 .mainIndex .sobre__Index .sobre__Index-texto {
-  height: 30vh;
-  width: 20vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-size: 1.2em;
   align-self: center;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2vh;
 }
 .mainIndex .sobre__Index h3 {
   margin-bottom: 30px;
@@ -251,71 +317,49 @@ header nav .dropdown button {
   padding: max-content;
 }
 .mainIndex .artistas__Index {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin-top: 8vh;
-}
-.mainIndex .artistas__Index .artistas__Index-imagen {
-  height: 60vh;
-  width: 30vw;
-  margin-left: 50px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .mainIndex .artistas__Index .artistas__Index-imagen img {
-  width: 30vw;
-  height: 60vh;
+  width: 100vw;
 }
 .mainIndex .artistas__Index .artistas__Index-texto {
-  height: 30vh;
-  width: 20vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-size: 1.2em;
   align-self: center;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-bottom: 2vh;
 }
 .mainIndex .artistas__Index h3 {
   margin-bottom: 30px;
 }
 .mainIndex .merch__Index {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin-top: 8vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .mainIndex .merch__Index .merch__Index-imagen {
-  height: 60vh;
-  width: 30vw;
   margin-right: 50px;
 }
 .mainIndex .merch__Index .merch__Index-imagen img {
-  width: 30vw;
-  height: 60vh;
+  width: 100vw;
 }
 .mainIndex .merch__Index .merch__Index-texto {
-  height: 30vh;
-  width: 20vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-size: 1.2em;
   align-self: center;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2vh;
 }
 .mainIndex .merch__Index h3 {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .dropdown {
-    display: none;
-  }
-
-  #navegador {
-    display: block;
-  }
-}
 @media only screen and (min-width: 1024px) {
   .dropdown {
     display: none;
@@ -323,6 +367,97 @@ header nav .dropdown button {
 
   #navegador {
     display: block;
+  }
+
+  .mainIndex .sobre__Index {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+    margin-bottom: 0vh;
+  }
+  .mainIndex .sobre__Index .sobre__Index-imagen {
+    height: 60vh;
+    width: 30vw;
+    margin-right: 50px;
+  }
+  .mainIndex .sobre__Index .sobre__Index-imagen img {
+    width: 30vw;
+    height: 60vh;
+  }
+  .mainIndex .sobre__Index .sobre__Index-texto {
+    height: 30vh;
+    width: 21.4285714286vw;
+    font-size: 1.4em;
+    align-self: center;
+  }
+  .mainIndex .sobre__Index h3 {
+    margin-bottom: 30px;
+  }
+  .mainIndex .artistas__Index {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+    margin-bottom: 0vh;
+  }
+  .mainIndex .artistas__Index .artistas__Index-imagen {
+    height: 60vh;
+    width: 30vw;
+    margin-left: 50px;
+  }
+  .mainIndex .artistas__Index .artistas__Index-imagen img {
+    width: 30vw;
+    height: 60vh;
+  }
+  .mainIndex .artistas__Index .artistas__Index-texto {
+    height: 30vh;
+    width: 20vw;
+    font-size: 1.4em;
+    align-self: center;
+  }
+  .mainIndex .artistas__Index h3 {
+    margin-bottom: 30px;
+  }
+  .mainIndex .merch__Index {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+    margin-bottom: 0vh;
+  }
+  .mainIndex .merch__Index .merch__Index-imagen {
+    height: 60vh;
+    width: 30vw;
+    margin-right: 50px;
+  }
+  .mainIndex .merch__Index .merch__Index-imagen img {
+    width: 30vw;
+    height: 60vh;
+  }
+  .mainIndex .merch__Index .merch__Index-texto {
+    height: 30vh;
+    width: 20vw;
+    font-size: 1.4em;
+    align-self: center;
+  }
+  .mainIndex .merch__Index h3 {
+    margin-bottom: 30px;
+  }
+  .mainIndex hr {
+    display: none;
   }
 }
 .header__noIndex {
@@ -353,6 +488,7 @@ header nav .dropdown button {
 .mainMerch .pre-tienda {
   text-align: center;
   margin-top: 5vh;
+  font-size: 1.2em;
 }
 .mainMerch .ventaRopa {
   display: flex;
@@ -364,7 +500,7 @@ header nav .dropdown button {
   margin: 30px;
 }
 .mainMerch .ventaRopa div img {
-  width: 20vw;
+  width: 250px;
   margin-bottom: 30px;
   transition: 0.6s;
 }
@@ -381,7 +517,7 @@ header nav .dropdown button {
   margin: 30px;
 }
 .mainMerch .ventaDiscos div img {
-  width: 20vw;
+  width: 250px;
   margin-bottom: 30px;
   transition: 0.6s;
 }
@@ -454,8 +590,19 @@ button.snip0047.red {
   background-color: #c87f0a;
 }
 
+@media only screen and (min-width: 1024px) {
+  .pre-tienda {
+    font-size: 1.3em;
+  }
+
+  .mainMerch .ventaRopa div img {
+    width: 20vw;
+  }
+  .mainMerch .ventaDiscos div img {
+    width: 20vw;
+  }
+}
 .artistasCarousel {
-  width: 75vw;
   margin-bottom: 8vh;
 }
 .artistasCarousel img {
@@ -489,6 +636,7 @@ button.snip0047.red {
   margin-top: 8vh;
   margin-bottom: 8vh;
   text-align: center;
+  display: none;
 }
 #galeria h2 {
   color: #c87f0a;
@@ -508,6 +656,11 @@ button.snip0047.red {
   margin: 15px;
 }
 
+@media only screen and (min-width: 1024px) {
+  #galeria {
+    display: block;
+  }
+}
 .mainSobre {
   width: 100%;
 }
@@ -605,11 +758,6 @@ button.snip0047.red {
   margin-bottom: 30px;
 }
 
-body {
-  background-color: #dadde6;
-  font-family: arial;
-}
-
 .fl-left {
   float: left;
 }
@@ -622,6 +770,7 @@ body {
   margin-top: 8vh;
   width: 90%;
   margin: 100px auto;
+  font-size: 0.9em;
 }
 .container .row {
   overflow: hidden;
@@ -630,9 +779,9 @@ body {
 .container .h2__tickets {
   text-transform: uppercase;
   font-weight: 900;
-  border-left: 10px solid #c87f0a;
   padding-left: 10px;
   margin-bottom: 30px;
+  text-align: center;
 }
 .container .card {
   display: table-row;
@@ -751,8 +900,43 @@ body {
   opacity: 0.7;
 }
 
+.main__tickets {
+  display: none;
+}
+.main__tickets .container .h2__tickets div {
+  display: flex;
+  flex-flow: column wrap;
+}
+.main__tickets .container .h2__tickets div article {
+  width: 100%;
+}
+
 .card + .card {
   margin-left: 2%;
+}
+
+.tickets__Responsive {
+  background-color: #474747;
+  width: 100%;
+  height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  padding: 20px;
+  text-align: center;
+  word-spacing: 5px;
+}
+.tickets__Responsive span {
+  border-left: 2px #888787 solid;
+  padding-left: 10px;
+}
+.tickets__Responsive .span__right {
+  color: #c87f0a;
+  font-weight: bold;
+  transition: 0.7s;
+}
+.tickets__Responsive .span__right:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 860px) {
@@ -770,6 +954,48 @@ body {
   .card-cont .even-date,
 .card-cont .even-info {
     font-size: 75%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .tickets__Responsive {
+    background-color: #474747;
+    width: 100%;
+    height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    padding: 20px;
+    text-align: start;
+  }
+  .tickets__Responsive p {
+    border-bottom: 2px #686666 solid;
+    border-top: 2px #686666 solid;
+    position: relative;
+    padding: 0.7rem;
+  }
+  .tickets__Responsive p .span__center {
+    position: absolute;
+    left: 45%;
+  }
+  .tickets__Responsive p .span__right {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    color: #c87f0a;
+    font-weight: bold;
+    transition: 0.7s;
+  }
+  .tickets__Responsive p .span__right:hover {
+    color: white;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .tickets__Responsive {
+    display: none;
+  }
+
+  .main__tickets {
+    display: block;
   }
 }
 .pre-contacto {
@@ -801,7 +1027,36 @@ body {
 }
 
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
   background-color: #1a1c1f;
+}
+
+h2 {
+  font-family: "Maven Pro", sans-serif;
+  color: #c87f0a;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.h2-Portada {
+  color: #fff;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Maven Pro", sans-serif;
+  color: #c87f0a;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Sarala", sans-serif;
+}
+
+#navegador {
+  font-family: "Staatliches", cursive;
+}
+
+h5 {
+  font-size: 1.7em;
 }/*# sourceMappingURL=estilo.css.map */
