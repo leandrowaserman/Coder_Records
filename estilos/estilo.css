@@ -674,90 +674,162 @@ button.snip0047.red {
   color: #c87f0a;
 }
 .mainSobre .sobre__origen {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin-top: 8vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .mainSobre .sobre__origen .sobre__origen-imagen {
-  height: 60vh;
-  width: 30vw;
   margin-right: 50px;
 }
 .mainSobre .sobre__origen .sobre__origen-imagen img {
-  width: 30vw;
-  height: 60vh;
+  width: 100vw;
 }
 .mainSobre .sobre__origen .sobre__origen-texto {
-  height: 60vh;
-  width: 21.4285714286vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-size: 1.2em;
   align-self: center;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2vh;
 }
 .mainSobre .sobre__origen h3 {
   margin-bottom: 30px;
 }
 .mainSobre .sobre__inicios {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin-top: 8vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .mainSobre .sobre__inicios .sobre__inicios-imagen {
-  height: 60vh;
-  width: 35vw;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 .mainSobre .sobre__inicios .sobre__inicios-imagen img {
-  width: 35vw;
-  height: 60vh;
+  width: 100vw;
 }
 .mainSobre .sobre__inicios .sobre__inicios-texto {
-  height: 60vh;
-  width: 21.4285714286vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-size: 1.2em;
   align-self: center;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2vh;
 }
 .mainSobre .sobre__inicios h3 {
   margin-bottom: 30px;
 }
 .mainSobre .sobre__actualidad {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin-top: 8vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .mainSobre .sobre__actualidad .sobre__actualidad-imagen {
-  height: 60vh;
-  width: 35vw;
   margin-right: 50px;
 }
 .mainSobre .sobre__actualidad .sobre__actualidad-imagen img {
-  width: 35vw;
-  height: 60vh;
+  width: 100vw;
 }
 .mainSobre .sobre__actualidad .sobre__actualidad-texto {
-  height: 60vh;
-  width: 21.4285714286vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-size: 1.2em;
   align-self: center;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2vh;
 }
 .mainSobre .sobre__actualidad h3 {
   margin-bottom: 30px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .mainSobre .sobre__origen {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+  }
+  .mainSobre .sobre__origen .sobre__origen-imagen {
+    height: 60vh;
+    width: 30vw;
+    margin-right: 50px;
+  }
+  .mainSobre .sobre__origen .sobre__origen-imagen img {
+    width: 30vw;
+    height: 60vh;
+  }
+  .mainSobre .sobre__origen .sobre__origen-texto {
+    height: 60vh;
+    width: 21.4285714286vw;
+    font-size: 1.2em;
+    align-self: center;
+  }
+  .mainSobre .sobre__origen h3 {
+    margin-bottom: 30px;
+  }
+  .mainSobre .sobre__inicios {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+    overflow: auto;
+  }
+  .mainSobre .sobre__inicios .sobre__inicios-imagen {
+    height: 60vh;
+    width: 35vw;
+    margin-left: 50px;
+  }
+  .mainSobre .sobre__inicios .sobre__inicios-imagen img {
+    width: 35vw;
+    height: 60vh;
+  }
+  .mainSobre .sobre__inicios .sobre__inicios-texto {
+    height: 60vh;
+    width: 21.4285714286vw;
+    font-size: 1.2em;
+    align-self: center;
+  }
+  .mainSobre .sobre__inicios h3 {
+    margin-bottom: 30px;
+  }
+  .mainSobre .sobre__actualidad {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+  }
+  .mainSobre .sobre__actualidad .sobre__actualidad-imagen {
+    height: 60vh;
+    width: 35vw;
+    margin-right: 50px;
+  }
+  .mainSobre .sobre__actualidad .sobre__actualidad-imagen img {
+    width: 35vw;
+    height: 60vh;
+  }
+  .mainSobre .sobre__actualidad .sobre__actualidad-texto {
+    height: 60vh;
+    width: 21.4285714286vw;
+    font-size: 1.2em;
+    align-self: center;
+  }
+  .mainSobre .sobre__actualidad h3 {
+    margin-bottom: 30px;
+  }
+}
 .fl-left {
   float: left;
 }

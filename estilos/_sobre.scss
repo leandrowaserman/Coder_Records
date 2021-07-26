@@ -10,66 +10,138 @@
         color: $naranja;
     }
     .sobre__origen{
-        @include mainImgFlex();
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         .sobre__origen-imagen{
-            height: $heightimgindex;
-            width: $widthimgindex;
             margin-right: 50px;
             img{
-                width: $widthimgindex;
-                height: $heightimgindex;
+                width: 100vw;
             }
         }
         .sobre__origen-texto{
-            height: $heightimgindex;
-            width: $widthimgindex/1.4;
+            height: min-content;
             font-size: 1.2em;
             align-self: center;
+            margin-left:5vh;
+            margin-right: 5vh;
+            margin-top: 2vh;
+
         }
         h3{
             margin-bottom: 30px;
         }
     }
     .sobre__inicios{
-        @include mainImgFlex();
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         .sobre__inicios-imagen{
-            height: $heightimgindex;
-            width: $widthimgindex+5vw;
-            margin-left: 50px;
+            margin-right: 50px;
             img{
-                width: $widthimgindex+5vw;
-                height: $heightimgindex;
+                width: 100vw;
             }
         }
         .sobre__inicios-texto{
-            height: $heightimgindex;
-            width: $widthimgindex/1.4;
+            height: min-content;
             font-size: 1.2em;
             align-self: center;
+            margin-left:5vh;
+            margin-right: 5vh;
+            margin-top: 2vh;
+
         }
         h3{
             margin-bottom: 30px;
         }
     }
     .sobre__actualidad{
-        @include mainImgFlex();
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         .sobre__actualidad-imagen{
-            height: $heightimgindex;
-            width: $widthimgindex+5vw;
             margin-right: 50px;
             img{
-                width: $widthimgindex+5vw;
-                height: $heightimgindex;
+                width: 100vw;
             }
         }
         .sobre__actualidad-texto{
-            height: $heightimgindex;
-            width: $widthimgindex/1.4;
+            height: min-content;
             font-size: 1.2em;
             align-self: center;
+            margin-left:5vh;
+            margin-right: 5vh;
+            margin-top: 2vh;
+
         }
         h3{
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .mainSobre{
+        .sobre__origen{
+            @include mainImgFlex();
+            .sobre__origen-imagen{
+                height: $heightimgindex;
+                width: $widthimgindex;
+                margin-right: 50px;
+                img{
+                    width: $widthimgindex;
+                    height: $heightimgindex;
+                }
+            }
+            .sobre__origen-texto{
+                height: $heightimgindex;
+                width: $widthimgindex/1.4;
+                font-size: 1.2em;
+                align-self: center;
+            }
+            h3{
+                margin-bottom: 30px;
+            }
+        }
+        .sobre__inicios{
+            @include mainImgFlex();
+            overflow: auto;
+            .sobre__inicios-imagen{
+                height: $heightimgindex;
+                width: $widthimgindex+5vw;
+                margin-left: 50px;
+                img{
+                    width: $widthimgindex+5vw;
+                    height: $heightimgindex;
+                }
+            }
+            .sobre__inicios-texto{
+                height: $heightimgindex;
+                width: $widthimgindex/1.4;
+                font-size: 1.2em;
+                align-self: center;
+            }
+            h3{
+                margin-bottom: 30px;
+            }
+        }
+        .sobre__actualidad{
+            @include mainImgFlex();
+            .sobre__actualidad-imagen{
+                height: $heightimgindex;
+                width: $widthimgindex+5vw;
+                margin-right: 50px;
+                img{
+                    width: $widthimgindex+5vw;
+                    height: $heightimgindex;
+                }
+            }
+            .sobre__actualidad-texto{
+                height: $heightimgindex;
+                width: $widthimgindex/1.4;
+                font-size: 1.2em;
+                align-self: center;
+            }
+            h3{
+                margin-bottom: 30px;
+            }
         }
     }
 }
