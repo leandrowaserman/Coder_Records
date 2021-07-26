@@ -108,10 +108,11 @@ header{
         grid-area: drop;
         word-spacing: 8px;
         .dropdown{
+            text-align: right;
             button{
                 background-color: $naranja;
             }
-            text-align: right;
+         
         }
     } 
 }
@@ -235,16 +236,15 @@ header{
     }
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
-
-}
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1158px) {
     .dropdown{
         display: none;
     }
     #navegador{
         display: block;
     }
+}
+@media only screen and (min-width:1024px){
     .mainIndex{
         .sobre__Index{
             @include mainImgFlex();

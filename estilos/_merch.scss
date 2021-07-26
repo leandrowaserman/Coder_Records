@@ -13,7 +13,7 @@
     .header__logo{
         grid-area: logo;
         img{
-            width: 13vw;
+            width: 200px;
             transition: 0.5s;
             &:hover{
                 transform: skew(12deg);
@@ -159,6 +159,13 @@ button.snip0047.red {
                 img{
                     width: 20vw;
                 }
+            }
+        }
+    }
+    .header__noIndex{
+        .header__logo{
+            img{
+                width: 13vw;
             }
         }
     }
