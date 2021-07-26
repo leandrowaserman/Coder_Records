@@ -1101,6 +1101,45 @@ button.snip0047.red {
   color: #c87f0a;
 }
 
+.mainError404 {
+  width: 50%;
+  height: 50vh;
+  margin: 10% auto;
+  text-align: center;
+  padding: 15px;
+  padding-top: 20px;
+  background: #1f1e1e;
+  background: linear-gradient(to right, #1f1e1e, #23262c);
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "logo" "logo" "texto" "link";
+  justify-items: center;
+  align-items: center;
+}
+.mainError404 p {
+  grid-area: texto;
+  font-size: 1.5vw;
+}
+.mainError404 .logo404 {
+  width: 35vw;
+  grid-area: logo;
+}
+.mainError404 a {
+  text-decoration: none;
+  color: #000;
+  background-color: #c87f0a;
+  opacity: 0.4;
+  padding: 5px;
+  font-size: 2vw;
+  transition: 1s;
+}
+.mainError404 a:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
