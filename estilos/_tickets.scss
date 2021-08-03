@@ -160,7 +160,7 @@
 .card + .card{
   margin-left: 2%
 }
-.tickets__Responsive{
+.tickets__responsive{
   width: 100%;
   height: 75vh;
   margin-left: auto;
@@ -199,7 +199,7 @@
   }
 }
 @media only screen and (min-width: 500px) and (max-width:768px){
-  .tickets__Responsive{
+  .tickets__responsive{
     width: 100%;
     height: 75vh;
     margin-left: auto;
@@ -234,7 +234,7 @@
   }
 }
 @media only screen and (min-width:768px) {
-  .tickets__Responsive{
+  .tickets__responsive{
     display: none;
   }
   .main__tickets{

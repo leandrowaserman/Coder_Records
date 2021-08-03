@@ -1,4 +1,4 @@
-.mainSobre{
+.main__sobre{
     width: 100%;
     img{
         transition: 0.8s;
@@ -78,7 +78,7 @@
 }
 
 @media only screen and (min-width:1024px){
-    .mainSobre{
+    .main__sobre{
         .sobre__origen{
             @include mainImgFlex();
             .sobre__origen-imagen{

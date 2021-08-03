@@ -21,7 +21,7 @@
         }
     }
 }
-.mainMerch{
+.main__merch{
     h2{
         color: $naranja;
     }
@@ -30,7 +30,7 @@
         margin-top: 5vh;
         font-size: 1.2em;
     }
-    .ventaRopa{
+    .venta-ropa{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -47,7 +47,7 @@
             }
         }
     }
-    .ventaDiscos{
+    .venta-discos{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -146,15 +146,15 @@ button.snip0047.red {
     .pre-tienda{
         font-size: 1.3em;
     }
-    .mainMerch{
-        .ventaRopa{
+    .main__merch{
+        .venta-ropa{
             div{
                 img{
                     width: 20vw;
                 }
             }
         }
-        .ventaDiscos{
+        .venta-discos{
             div{
                 img{
                     width: 20vw;

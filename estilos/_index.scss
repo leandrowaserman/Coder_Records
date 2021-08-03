@@ -116,7 +116,7 @@ header{
         }
     } 
 }
-.mainIndex{
+.main__index{
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
@@ -130,16 +130,16 @@ header{
         font-family: 'Maven Pro', sans-serif;
         color: $naranja;
     }
-    .sobre__Index{
+    .sobre__index{
         margin-top: 5vh;
         margin-bottom: 5vh;
-        .sobre__Index-imagen{
+        .sobre__index-imagen{
             margin-right: 50px;
             img{
                 width: 100vw;
             }
         }
-        .sobre__Index-texto{
+        .sobre__index-texto{
             height: min-content;
             font-size: 1.2em;
             align-self: center;
@@ -151,7 +151,7 @@ header{
             margin-bottom: 30px;
         }
     }
-    .verMas {
+    .ver-mas {
         font-family: 'Roboto', Arial, sans-serif;
         color: #ffffff;
         cursor: pointer;
@@ -191,15 +191,15 @@ header{
             padding: max-content;
         }
     }
-    .artistas__Index{
+    .artistas__index{
         margin-top: 5vh;
         margin-bottom: 5vh;
-        .artistas__Index-imagen{
+        .artistas__index-imagen{
             img{
                 width: 100vw;
             }
         }
-        .artistas__Index-texto{
+        .artistas__index-texto{
             height: min-content;
             font-size: 1.2em;
             align-self: center;
@@ -211,16 +211,16 @@ header{
             margin-bottom: 30px;
         }
     }
-    .merch__Index{
+    .merch__index{
         margin-top: 5vh;
         margin-bottom: 5vh;
-        .merch__Index-imagen{
+        .merch__index-imagen{
             margin-right: 50px;
             img{
                 width: 100vw;
             }
         }
-        .merch__Index-texto{
+        .merch__index-texto{
             height: min-content;
             font-size: 1.2em;
             align-self: center;
@@ -245,11 +245,11 @@ header{
     }
 }
 @media only screen and (min-width:1024px){
-    .mainIndex{
-        .sobre__Index{
+    .main__index{
+        .sobre__index{
             @include mainImgFlex();
             margin-bottom: 0vh;
-            .sobre__Index-imagen{
+            .sobre__index-imagen{
                 height: $heightimgindex;
                 width: $widthimgindex;
                 margin-right: 50px;
@@ -258,7 +258,7 @@ header{
                     height: $heightimgindex;
                 }
             }
-            .sobre__Index-texto{
+            .sobre__index-texto{
                 height: $heightimgindex/2;
                 width: $widthimgindex;
                 font-size: 1.4em;
@@ -268,10 +268,10 @@ header{
                 margin-bottom: 30px;
             }
         }
-        .artistas__Index{
+        .artistas__index{
             @include mainImgFlex();
             margin-bottom: 0vh;
-            .artistas__Index-imagen{
+            .artistas__index-imagen{
                 height: $heightimgindex;
                 width: $widthimgindex;
                 margin-left: 50px;
@@ -280,7 +280,7 @@ header{
                     height: $heightimgindex;
                 }
             }
-            .artistas__Index-texto{
+            .artistas__index-texto{
                 height: $heightimgindex/2;
                 width: $widthimgindex/1.5;
                 font-size: 1.4em;
@@ -290,10 +290,10 @@ header{
                 margin-bottom: 30px;
             }
         }
-        .merch__Index{
+        .merch__index{
             @include mainImgFlex();
             margin-bottom: 0vh;
-            .merch__Index-imagen{
+            .merch__index-imagen{
                 height: $heightimgindex;
                 width: $widthimgindex;
                 margin-right: 50px;
@@ -302,7 +302,7 @@ header{
                     height: $heightimgindex;
                 }
             }
-            .merch__Index-texto{
+            .merch__index-texto{
                 height: $heightimgindex/2;
                 width: $widthimgindex/1.5;
                 font-size: 1.4em;
