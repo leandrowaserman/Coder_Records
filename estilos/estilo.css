@@ -748,7 +748,7 @@ button.snip0047.red {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
   .main__sobre .sobre__origen {
     height: -webkit-max-content;
     height: -moz-max-content;
@@ -758,6 +758,95 @@ button.snip0047.red {
     flex-flow: row nowrap;
     justify-content: center;
     margin-top: 8vh;
+    height: 90vh;
+  }
+  .main__sobre .sobre__origen .sobre__origen-imagen {
+    height: 60vh;
+    width: 30vw;
+    margin-right: 50px;
+  }
+  .main__sobre .sobre__origen .sobre__origen-imagen img {
+    width: 30vw;
+    height: 60vh;
+  }
+  .main__sobre .sobre__origen .sobre__origen-texto {
+    height: 60vh;
+    width: 30vw;
+    font-size: 1.2em;
+    align-self: start;
+  }
+  .main__sobre .sobre__origen h3 {
+    margin-bottom: 30px;
+  }
+  .main__sobre .sobre__inicios {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+    height: 78vh;
+  }
+  .main__sobre .sobre__inicios .sobre__inicios-imagen {
+    height: 60vh;
+    width: 30vw;
+    margin-right: 50px;
+  }
+  .main__sobre .sobre__inicios .sobre__inicios-imagen img {
+    width: 30vw;
+    height: 60vh;
+  }
+  .main__sobre .sobre__inicios .sobre__inicios-texto {
+    height: 60vh;
+    width: 30vw;
+    font-size: 1.2em;
+    align-self: start;
+  }
+  .main__sobre .sobre__inicios h3 {
+    margin-bottom: 30px;
+  }
+  .main__sobre .sobre__actualidad {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+  }
+  .main__sobre .sobre__actualidad .sobre__actualidad-imagen {
+    height: 60vh;
+    width: 35vw;
+    margin-right: 50px;
+  }
+  .main__sobre .sobre__actualidad .sobre__actualidad-imagen img {
+    width: 35vw;
+    height: 60vh;
+  }
+  .main__sobre .sobre__actualidad .sobre__actualidad-texto {
+    height: 60vh;
+    width: 30vw;
+    font-size: 1.2em;
+    align-self: center;
+  }
+  .main__sobre .sobre__actualidad h3 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main__sobre .sobre__origen {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 8vh;
+    height: 72vh;
   }
   .main__sobre .sobre__origen .sobre__origen-imagen {
     height: 60vh;
@@ -772,7 +861,7 @@ button.snip0047.red {
     height: 60vh;
     width: 21.4285714286vw;
     font-size: 1.2em;
-    align-self: center;
+    align-self: start;
   }
   .main__sobre .sobre__origen h3 {
     margin-bottom: 30px;
@@ -786,22 +875,22 @@ button.snip0047.red {
     flex-flow: row nowrap;
     justify-content: center;
     margin-top: 8vh;
-    overflow: auto;
+    height: 72vh;
   }
   .main__sobre .sobre__inicios .sobre__inicios-imagen {
     height: 60vh;
-    width: 35vw;
-    margin-left: 50px;
+    width: 30vw;
+    margin-right: 50px;
   }
   .main__sobre .sobre__inicios .sobre__inicios-imagen img {
-    width: 35vw;
+    width: 30vw;
     height: 60vh;
   }
   .main__sobre .sobre__inicios .sobre__inicios-texto {
     height: 60vh;
     width: 21.4285714286vw;
     font-size: 1.2em;
-    align-self: center;
+    align-self: start;
   }
   .main__sobre .sobre__inicios h3 {
     margin-bottom: 30px;
